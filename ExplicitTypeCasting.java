@@ -8,6 +8,11 @@ public class ExplicitTypeCasting {
 
         System.out.println("double value: " + doubleValue);
         System.out.println("int value: " + intValue);
+        
+        double number1=20.45;
+        int number2= (int)number1;
+        
+        System.out.println(number2);
     }
 
 }

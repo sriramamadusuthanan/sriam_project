@@ -8,6 +8,12 @@ public class ImplicitTypeCasting {
 
         System.out.println("int value: " + intValue);
         System.out.println("double value: " + doubleValue);
+        
+        int number=122;
+        double number2= number;
+        
+        System.out.println(number2);        
+        
     }
 
 }
