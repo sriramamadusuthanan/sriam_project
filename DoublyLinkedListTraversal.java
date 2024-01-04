@@ -1,11 +1,11 @@
 package problem1to10;
 
-class Node {
+class Node2 {
     int data;
-    Node next;
-    Node prev;
+    Node2 next;
+    Node2 prev;
 
-    public Node(int data) {
+    public Node2(int data) {
         this.data = data;
         this.next = null;
         this.prev = null;
@@ -13,16 +13,16 @@ class Node {
 }
 
 class DoublyLinkedList {
-    Node head;
+    Node2 head;
 
     // Method to insert a new node at the end of the doubly linked list
     public void insertEnd(int newData) {
-        Node newNode = new Node(newData);
+        Node2 newNode = new Node2(newData);
 
         if (head == null) {
             head = newNode;
         } else {
-            Node current = head;
+            Node2 current = head;
             while (current.next != null) {
                 current = current.next;
             }
@@ -35,7 +35,7 @@ class DoublyLinkedList {
     public void traverseForward() {
         System.out.println("Forward Traversal:");
 
-        Node current = head;
+        Node2 current = head;
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
@@ -48,7 +48,7 @@ class DoublyLinkedList {
     public void traverseBackward() {
         System.out.println("Backward Traversal:");
 
-        Node current = head;
+        Node2 current = head;
         while (current.next != null) {
             current = current.next;
         }

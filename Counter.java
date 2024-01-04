@@ -29,6 +29,7 @@ class IncrementThread extends Thread {
 }
 
 public class SynchronizationExample {
+	
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
 
