@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+ <!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.entity.Student" table="StudentInfo">
+    <!-- id tag will represent primary key -->
+        <id name="stdNo" >
+            <generator class="assigned"/>
+        </id>
+
+        <property name="stdName" column="studentName" />
+        <property name="stdRoll" column="studentRoll" />
+        
+        <property name="course"  />
+
+        <!-- Other properties go here -->
+
+    </class>
+
+</hibernate-mapping>
+ 
